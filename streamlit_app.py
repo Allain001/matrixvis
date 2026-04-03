@@ -52,9 +52,17 @@ def _inline_assets(html: str) -> str:
 
 
 st.set_page_config(page_title="LineaVis", layout="wide")
-
-st.title("LineaVis")
-st.caption("React + Vite build embedded in Streamlit")
+st.markdown(
+  """
+  <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .block-container {padding-top: 0; padding-bottom: 0;}
+  </style>
+  """,
+  unsafe_allow_html=True,
+)
 
 if not INDEX_FILE.exists():
   st.error("未找到 dist/index.html。请先运行：npm run build:streamlit")
@@ -63,4 +71,4 @@ if not INDEX_FILE.exists():
 html = INDEX_FILE.read_text(encoding="utf-8")
 html = _inline_assets(html)
 
-st.components.v1.html(html, height=900, scrolling=True)
+st.components.v1.html(html, height=1000, scrolling=True)

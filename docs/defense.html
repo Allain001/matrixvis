@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LineaVis 答辩文档</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 40px;
+        font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+        color: #111;
+        line-height: 1.7;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 18px;
+        margin-top: 24px;
+        border-left: 4px solid #ff6e00;
+        padding-left: 10px;
+      }
+      p {
+        margin: 6px 0;
+      }
+      .list {
+        margin: 6px 0 0 0;
+      }
+      .list div {
+        margin: 4px 0;
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 8px;
+        background: #ff6e00;
+        color: white;
+        border-radius: 999px;
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badge">答辩文档</div>
+    <h1>LineaVis 线性代数可视化平台</h1>
+    <p>软件应用与开发组 · 作品定位：教学与评审展示一体化平台</p>
+
+    <h2>作品定位</h2>
+    <p>LineaVis 面向高校线性代数教学与竞赛评审展示，提供“可操作、可验证、可解释”的矩阵变换实验平台。</p>
+
+    <h2>创新点</h2>
+    <div class="list">
+      <div>1. 交互式 3D 场景将抽象矩阵变换转化为可视化实验。</div>
+      <div>2. 以行列式、迹、特征值等不变量驱动结果验证，形成“操作—计算—验证”的闭环。</div>
+      <div>3. 任务挑战机制引导学生构造满足性质的矩阵，强化理解而非记忆。</div>
+      <div>4. WebGL 容错渲染与 Streamlit 一键部署，适配线上答辩与教学场景。</div>
+    </div>
+
+    <h2>技术深度</h2>
+    <div class="list">
+      <div>1. 代数层：实时计算行列式、迹、特征值与正交性判别。</div>
+      <div>2. 几何层：矩阵作用于基向量与单位方格，展示旋转、剪切、缩放与反射。</div>
+      <div>3. 渲染层：Three.js + React Three Fiber 实时渲染，支持交互旋转与缩放。</div>
+      <div>4. 工程层：模块化架构、前端构建产物与 Streamlit 集成部署。</div>
+    </div>
+
+    <h2>核心功能</h2>
+    <div class="list">
+      <div>1. 矩阵编辑与实时变换可视化。</div>
+      <div>2. 不变量分析与变换类型判别。</div>
+      <div>3. 任务挑战与达成状态提示。</div>
+      <div>4. 学习模块路径与场景化介绍。</div>
+      <div>5. 一键导出矩阵分析结果（JSON）。</div>
+    </div>
+
+    <h2>作品运行方式</h2>
+    <div class="list">
+      <div>1. 在线部署：Streamlit Cloud（提交后的公开链接）。</div>
+      <div>2. 本地运行：npm run dev 或 streamlit run streamlit_app.py。</div>
+    </div>
+
+    <h2>应用价值</h2>
+    <div class="list">
+      <div>1. 教学：降低抽象难度，提高课堂互动与理解效率。</div>
+      <div>2. 竞赛：评审可现场构造矩阵并验证结果，提升可信度。</div>
+      <div>3. 传播：可扩展至机器学习、图形学与数据可视化课程。</div>
+    </div>
+
+    <h2>后续规划</h2>
+    <div class="list">
+      <div>1. 三维矩阵与特征分解（SVD、PCA）可视化。</div>
+      <div>2. 学习路径评分与个性化推荐。</div>
+      <div>3. 教学版与竞赛版主题皮肤切换。</div>
+    </div>
+  </body>
+</html>
